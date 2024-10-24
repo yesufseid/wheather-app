@@ -39,7 +39,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 endAngle={-270}
               >
                 {getCircularData(temperature, 100).map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  <Cell key={`cell-${entry}`} fill={COLORS[index]} />
                 ))}
               </Pie>
             </PieChart>
@@ -61,7 +61,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 endAngle={-270}
               >
                 {getCircularData(humidity, 100).map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  <Cell key={`cell-${entry}`} fill={COLORS[index]} />
                 ))}
               </Pie>
             </PieChart>
@@ -83,7 +83,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 endAngle={-270}
               >
                 {getCircularData(windSpeed, 100).map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  <Cell key={`cell-${entry}`} fill={COLORS[index]} />
                 ))}
               </Pie>
             </PieChart>
@@ -105,7 +105,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 endAngle={-270}
               >
                 {getCircularData(pressure, 1100).map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  <Cell key={`cell-${entry}`} fill={COLORS[index]} />
                 ))}
               </Pie>
             </PieChart>
@@ -127,7 +127,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 endAngle={-270}
               >
                 {getCircularData(visibility, 10).map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  <Cell key={`cell-${entry}`} fill={COLORS[index]} />
                 ))}
               </Pie>
             </PieChart>
@@ -149,7 +149,7 @@ export const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data }) => {
                 endAngle={-270}
               >
                 {getCircularData(uvIndex, 10).map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                  <Cell key={`cell-${entry}`} fill={COLORS[index]} />
                 ))}
               </Pie>
             </PieChart>
